@@ -2,11 +2,9 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div>
-            <footer>
-                © {new Date().getFullYear()}, Tuple, Inc.
-            </footer>
-        </div>
+        <footer className="px-4 py-8 text-center text-gray-700">
+            © {new Date().getFullYear()}, Tuple, Inc.
+        </footer>
     )
 }
 

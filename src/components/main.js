@@ -2,7 +2,7 @@ import React from 'react'
 
 const Layout = ({ children }) => {
     return (
-        <main className="px-4 py-6 pt-6">
+        <main className="max-w-md mx-auto px-4 py-6 pt-6">
             <h1 className="max-w-xs mx-auto text-2xl font-bold text-center leading-snug text-gray-900">
                 <span className="inline-flex relative text-white">
                     <span
@@ -139,18 +139,18 @@ const Layout = ({ children }) => {
                     </div>
                 </div>
             </div>
-            <section className="mt-16">
+            <section className="max-w-md mx-auto mt-16">
                 <div className="px-4">
                     <h2 className="text-2xl font-bold text-center text-gray-900">
                         Your Tuple explained
                     </h2>
-                    <p className="text-center text-gray-800">
+                    <p className="mt-4 text-center text-gray-800">
                         Here's what you need to know about your Tuple license,
                         based on the questions we get asked the most.
                     </p>
                 </div>
                 <dl className="mt-4">
-                    <div className="px-8 py-6 border-b-2">
+                    <div className="px-4 py-6 border-b-2">
                         <dt className="flex items-center">
                             <span className="text-gray-900">
                                 {' '}
@@ -167,113 +167,106 @@ const Layout = ({ children }) => {
                                 </svg>
                             </button>
                         </dt>
-                        <dd className="hidden ">This text should not be visible</dd>
+                        <dd className="hidden ">
+                            This text should not be visible
+                        </dd>
                     </div>
-                    <div>
+                    <div className="px-4 py-6 border-b-2">
                         <dt className="flex items-center">
-                            How much does it cost to have guests con my TUple
-                            team?
-                            <button>
-                                <svg viewBox="0 0 512.001 512.001">
-                                    <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0014.143 5.857 19.94 19.94 0 0014.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z" />
+                            <span className="text-gray-900">
+                                {' '}
+                                How much does it cost to have guests con my
+                                TUple team?
+                            </span>
+                            <button className="block ml-4">
+                                <svg className="h-4 w-4" viewBox="0 0 512 512">
+                                    <path
+                                        className="text-gray-900"
+                                        vectorEffect="non-scaling-stroke"
+                                        d="M492 236H276V20c0-11.046-8.954-20-20-20s-20 8.954-20 20v216H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h216v216c0 11.046 8.954 20 20 20s20-8.954 20-20V276h216c11.046 0 20-8.954 20-20s-8.954-20-20-20z"
+                                    />
                                 </svg>
                             </button>
                         </dt>
-                        <dd className="hidden">This text should not be visible</dd>
-                    </div>
-                    <div>
-                        <dt>
-                            We need to add new users to our team. How will that
-                            be billed?
-                        </dt>
-                        <dd>
-                            This text should not be visibleThis text should not
-                            be visibleThis text should not be visible
+                        <dd className="hidden">
+                            This text should not be visible
                         </dd>
                     </div>
-                    <div>
-                        <dt>
-                            Can I mix free members and Unlimited members
-                            together?
+                    <div className="px-4 py-6 bg-white shadow-lg">
+                        <dt className="flex items-center">
+                            <span className="font-semibold text-indigo-700">
+                                We need to add new users to our team. How will
+                                that be billed?
+                            </span>
+                            <button className="block ml-4">
+                                <svg
+                                    className="h-4 w-4"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        className="text-gray-700"
+                                        d="M6 18L18 6M6 6l12 12"
+                                        vectorEffect="non-scaling-stroke"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                </svg>
+                            </button>
                         </dt>
-                        <dd>This text should not be visible</dd>
+                        <dd className="mt-4   text-sm text-gray-700">
+                            <p>
+                                This text should not be visibleThis text should
+                                not be visibleThis text should not be visible
+                            </p>
+                        </dd>
                     </div>
-                    <div>
-                        <dt>
-                            Can I mix free members and Unlimited members
-                            together?
+
+                    <div className="px-4 py-6 border-b-2">
+                        <dt className="flex items-center">
+                            <span className="text-gray-900">
+                                Can I mix free members and Unlimited members
+                                together?
+                            </span>
+                            <button className="block ml-4">
+                                <svg className="h-4 w-4" viewBox="0 0 512 512">
+                                    <path
+                                        className="text-gray-900"
+                                        vectorEffect="non-scaling-stroke"
+                                        d="M492 236H276V20c0-11.046-8.954-20-20-20s-20 8.954-20 20v216H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h216v216c0 11.046 8.954 20 20 20s20-8.954 20-20V276h216c11.046 0 20-8.954 20-20s-8.954-20-20-20z"
+                                    />
+                                </svg>
+                            </button>
                         </dt>
-                        <dd>This text should not be visible</dd>
+                        <dd className="hidden">
+                            This text should not be visible
+                        </dd>
+                    </div>
+
+                    <div className="px-4 py-6 border-b-2">
+                        <dt className="flex items-center">
+                            <span className="text-gray-900">
+                                Can I mix free members and Unlimited members
+                                together?
+                            </span>
+                            <button className="block ml-4">
+                                <svg className="h-4 w-4" viewBox="0 0 512 512">
+                                    <path
+                                        className="text-gray-900"
+                                        vectorEffect="non-scaling-stroke"
+                                        d="M492 236H276V20c0-11.046-8.954-20-20-20s-20 8.954-20 20v216H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h216v216c0 11.046 8.954 20 20 20s20-8.954 20-20V276h216c11.046 0 20-8.954 20-20s-8.954-20-20-20z"
+                                    />
+                                </svg>
+                            </button>
+                        </dt>
+                        <dd className="hidden">
+                            This text should not be visible
+                        </dd>
                     </div>
                 </dl>
             </section>
-
-            {/* <div>
-                <div>
-                    <h2>Customized</h2>
-                    <p>Need a custom plan? We're flexible!</p>
-                </div>
-                <div>
-                    <ul>
-                        <li>Volume discount</li>
-                        <li>Sporadic usage discount</li>
-                        <li>SSO support</li>
-                    </ul>
-                    <div>
-                        <a href="#">Contact a Co-Funder</a>
-                    </div>
-                    
-                    <div>
-                        <h2>Your Tuple explained</h2>
-                        <p>
-                            Here's what you need to know about your Tuple
-                            license, based on the questions we get asked the
-                            most.
-                        </p>
-                        <dl>
-                            <div>
-                                <dt>
-                                    Will I lose my data if I dowgrade from the
-                                    unlimited plan to the Free plan
-                                </dt>
-                                <dd>This text should not be visible</dd>
-                            </div>
-                            <div>
-                                <dt>
-                                    How much does it cost to have guests con my
-                                    TUple team?
-                                </dt>
-                                <dd>This text should not be visible</dd>
-                            </div>
-                            <div>
-                                <dt>
-                                    We need to add new users to our team. How
-                                    will that be billed?
-                                </dt>
-                                <dd>
-                                    This text should not be visibleThis text
-                                    should not be visibleThis text should not be
-                                    visible
-                                </dd>
-                            </div>
-                            <div>
-                                <dt>
-                                    Can I mix free members and Unlimited members
-                                    together?
-                                </dt>
-                                <dd>This text should not be visible</dd>
-                            </div>
-                            <div>
-                                <dt>
-                                    Can I mix free members and Unlimited members
-                                    together?
-                                </dt>
-                                <dd>This text should not be visible</dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
-            </div> */}
         </main>
     )
 }

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Logo from '../images/logo.svg'
 const Header = ({ siteTitle }) => (
-    <header className="flex items-center justify-between px-4 py-6">
+    <header className="max-w-md mx-auto flex items-center justify-between px-4 py-6">
         {/* <div
             style={{
                 margin: `0 auto`,
